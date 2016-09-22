@@ -20,6 +20,7 @@ License][cc-by-4.0].
 
 [andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-zero-
 [cc-by-4.0]: http://creativecommons.org/licenses/by/4.0/
+[instead]: https://instead.syscall.ru/
 
 [license-cc-by-4.0]: https://i.creativecommons.org/l/by/4.0/80x15.png
 [status-zero]: https://img.shields.io/badge/status-zero-lightgrey.svg
