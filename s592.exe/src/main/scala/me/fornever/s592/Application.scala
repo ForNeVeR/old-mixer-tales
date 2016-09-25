@@ -1,5 +1,8 @@
 package me.fornever.s592
 
-class Application extends App {
+import java.io.InputStream
 
+object Application extends App {
+  private val font: InputStream = getClass.getResourceAsStream("/fonts/roboto/Roboto-Black.ttf")
+  println(font)
 }
