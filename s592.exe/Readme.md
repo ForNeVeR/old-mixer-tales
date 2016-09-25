@@ -13,7 +13,18 @@ Configuration format
 --------------------
 
 Every input file will be converted to an image. The `conf` file should be in
-[HOCON][hocon] format. See `examples/test.conf` as an example.
+[HOCON][hocon] format. Here's a file example:
+
+```
+width = 800
+height = 600
+texts = [{
+    coords = [0, 100]
+    width = 800
+    text = "Hello world"
+}]
+
+```
 
 ### Root level
 
