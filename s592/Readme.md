@@ -1,7 +1,9 @@
 S592 program
 ============
 
-This is a simple program to prepare images containing texts.
+This is a simple program to prepare images containing texts. It was inspired by
+[SCP-592][scp-592] report and is meant to simulate the image recognition program
+used by the SCP Foundation.
 
 Usage:
 
@@ -43,3 +45,4 @@ Root level have the following properties:
 - `width`: (optional) text width. If defined, the text will be centered.
 
 [hocon]: https://github.com/typesafehub/config#using-hocon-the-json-superset
+[scp-592]: http://www.scp-wiki.net/scp-592

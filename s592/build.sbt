@@ -1,4 +1,4 @@
-name := "592.exe"
+name := "592"
 
 version := "0.0.0"
 
