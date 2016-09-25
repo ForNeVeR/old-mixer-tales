@@ -21,6 +21,6 @@ resourceGenerators in Compile <+= Def.task {
         }
     } else {
         println("Roboto font seems to be loaded")
-        Seq()
+        output.list().map(output / _).map(path => new File(path.toString)).toSeq
     }
 }
