@@ -2,14 +2,23 @@ name := "592.exe"
 
 version := "0.0.0"
 
+libraryDependencies ++= Seq(
+    "com.typesafe" % "config" % "1.3.1",
+    "com.google.guava" % "guava" % "19.0"
+)
+
 scalaVersion := "2.11.8"
 
 mainClass in (Compile, run) := Some("me.fornever.s592.Application")
 
 resourceGenerators in Compile <+= Def.task {
-    IO.withTemporaryFile("s592", ".zip") { zip =>
-        IO.download(new URL("https://www.fontsquirrel.com/fonts/download/roboto"), zip)
-        val output = (resourceManaged in Compile).value / "fonts" / "roboto"
-        IO.unzip(zip, output).toSeq
+    val output = (resourceManaged in Compile).value / "fonts" / "roboto"
+    if (!output.exists() || output.list().length == 0) {
+        IO.withTemporaryFile("s592", ".zip") { zip =>
+            IO.download(new URL("https://www.fontsquirrel.com/fonts/download/roboto"), zip)
+            IO.unzip(zip, output).toSeq
+        }
+    } else {
+        Seq()
     }
 }

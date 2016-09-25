@@ -1,8 +1,9 @@
 package me.fornever.s592
 
-import java.io.InputStream
-
 object Application extends App {
-  private val font: InputStream = getClass.getResourceAsStream("/fonts/roboto/Roboto-Black.ttf")
-  println(font)
+
+    args match {
+        case Array(filePath) => Processor.process(filePath)
+        case _ => println("Usage: <file> to process the file")
+    }
 }
