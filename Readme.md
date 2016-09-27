@@ -20,7 +20,7 @@ Quick start guide
 1. [Get INSTEAD][download-instead].
 2. Put this repo in `games` (`~/.instead/games/` on Linux,
    `path_to_instead\games` on Windows.)
-3. Start interpreter (`instead` on Linux, probably the same on Windows.)
+3. Start interpreter (`instead` on Linux, `sdl-instead` on Windows.)
 4. Choose “Select game” item from the menu (the button is in the lower right
    corner of the screen).
 5. Choose “Сказки старого Миксера” item.
@@ -29,6 +29,12 @@ Quick start guide
 *Note to developers*: there doesn't seem to be a way to hot-reload the game, so
 whenever you change the code, you have to choose “Restart game” menu item and
 start from the very beginning.
+
+Alternately you could start INSTEAD with preloaded game, for example:
+
+```console
+$ sdl-instead path/to/old-mixer-tales
+```
 
 Materials
 ---------
