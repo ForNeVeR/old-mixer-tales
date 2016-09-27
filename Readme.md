@@ -39,8 +39,12 @@ $ sdl-instead path/to/old-mixer-tales
 Materials
 ---------
 
-- [Scenic guide to universe][scenic-guide-to-universe]
 - [Epigraph][epigraph]
+- [Scenic guide to universe][scenic-guide-to-universe]
+
+Inactive:
+
+- [Apocalypse][apocalypse]
 
 
 License [![license-cc-by-4.0][]][cc-by-4.0]
@@ -49,7 +53,8 @@ License [![license-cc-by-4.0][]][cc-by-4.0]
 This work is licensed under a [Creative Commons Attribution 4.0 International
 License][cc-by-4.0].
 
-[epigraph]: tales/epigraph.md
+[apocalypse]: story/apocalypse.md
+[epigraph]: story/epigraph.md
 [scenic-guide-to-universe]: story/scenic-guide-to-universe.md
 
 [andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-zero-
