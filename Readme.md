@@ -17,6 +17,8 @@ Will be implemented on [INSTEAD][instead] platform.
 Quick start guide
 -----------------
 
+### Native INSTEAD client
+
 1. [Get INSTEAD][download-instead].
 2. Put this repo in `games` (`~/.instead/games/` on Linux,
    `path_to_instead\games` on Windows.)
@@ -35,6 +37,27 @@ Alternately you could start INSTEAD with preloaded game, for example:
 ```console
 $ sdl-instead path/to/old-mixer-tales
 ```
+
+### JavaScript INSTEAD Client
+
+There's an [instead-js] project we also support. To run it, follow the
+instructions in the instead-js repository. Here's a quick excerpt:
+
+```console
+$ git clone git@github.com:instead-hub/instead-js.git
+$ cd instead-js
+$ git submodule init
+$ git submodule update
+$ npm install
+$ npm run build
+
+$ cp -r /path/to/old-rexim-tales ./build/games/old-rexim-tales
+$ cd build
+$ node list_games.js
+```
+
+After that, you could either publish the `build` directory to any web server or
+start a local server with `npm start`.
 
 Materials
 ---------
@@ -62,5 +85,6 @@ License][cc-by-4.0].
 [instead]: https://instead.syscall.ru/
 [download-instead]: https://instead.syscall.ru/ru/download/
 
+[instead-js]: https://github.com/instead-hub/instead-js/
 [license-cc-by-4.0]: https://i.creativecommons.org/l/by/4.0/80x15.png
 [status-zero]: https://img.shields.io/badge/status-zero-lightgrey.svg
