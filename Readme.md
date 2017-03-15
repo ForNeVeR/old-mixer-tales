@@ -40,8 +40,9 @@ $ sdl-instead path/to/old-mixer-tales
 
 ### JavaScript INSTEAD Client
 
-There's an [instead-js] project we also support. To run it, follow the
-instructions in the instead-js repository. Here's a quick excerpt:
+The game can also be run inside a web client provided by the [instead-js]
+project. To do so, follow the instructions in the instead-js repository. Here's
+an example command sequence:
 
 ```console
 $ git clone git@github.com:instead-hub/instead-js.git
